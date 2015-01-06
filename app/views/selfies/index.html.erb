@@ -1,0 +1,5 @@
+<ul>
+<% @selfies.each do |selfie| %>
+	<li><%= selfie.body %> <%= link_to 'delete', task_path(selfie), method: 'delete' %> <span> <%= link_to 'x', selfie_path(selfie), method: 'delete' %>  <%= link_to 'edit', edit_selfie_path(selfie) %>  </span> </li>
+<% end %>
+ </ul>
